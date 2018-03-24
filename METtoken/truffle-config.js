@@ -21,23 +21,23 @@ var ropstenWallet = Wallet.fromPrivateKey(ropstenPrivateKey);
 var ropstenProvider = new WalletProvider(ropstenWallet, "https://ropsten.infura.io/");
 
 module.exports = {
-  networks: {
+	networks: {
 		dev: { // Whatever network our local node connects to
 			network_id: "*", // Match any network id
 			host: "localhost",
 			port: 8545
 		},
-		mainnet: {  // Provided by Infura, load keys in .env file
+		mainnet: { // Provided by Infura, load keys in .env file
 			network_id: "1",
 			provider: mainNetProvider,
 			gas: 4600000,
-			gasPrice: web3.toWei("20", "gwei"),
+			gasPrice: web3.toWei("20", "gwei")
 		},
 		ropsten: { // Provided by Infura, load keys in .env file
 			network_id: "3",
 			provider: ropstenProvider,
 			gas: 4600000,
-			gasPrice: web3.toWei("20", "gwei"),
+			gasPrice: web3.toWei("20", "gwei")
 		},
 		kovan: {
 			network_id: 42,
@@ -50,12 +50,12 @@ module.exports = {
 			host: "localhost",
 			port: 7545,
 			gas: 6721975
-    },
-    aws: { // Private network on AWS
-      network_id : "15",
-      host : "public-ip-address-rpc-host",
-      port: 8545,
-      gas: 6721975
-    }
+		},
+		aws: { // Private network on AWS
+			network_id: "15",
+			host: "public-ip-address",
+			port: 8545,
+			gas: 6721975
+		}
 	}
 };
