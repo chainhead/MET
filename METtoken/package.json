@@ -1,7 +1,7 @@
 {
   "name": "mettoken",
   "version": "1.0.0",
-  "description": "Simple ERC20 token (Mastering Ethereum Token - MET)",
+  "description": "Mastering Ethereum Token (MET) for the book Mastering Ethereum",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -9,23 +9,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "chainhead",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chainhead/MET.git"
   },
   "keywords": [
-    "ethereum",
-    "ERC20",
+    "erc20",
     "token",
+    "ethereum",
+    "truffle",
     "MET"
   ],
+  "author": "chainhead",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/chainhead/MET/issues"
   },
-  "homepage": "https://github.com/chainhead/MET#readme",
-  "dependencies": {
-    "zeppelin-solidity": "^1.7.0"
-  }
+  "homepage": "https://github.com/chainhead/MET#readme"
 }
